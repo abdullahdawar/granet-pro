@@ -1,0 +1,36 @@
+---
+import { SITE } from '@/config/site';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Hero from '@/components/home/Hero.astro';
+import Logos from '@/components/home/Logos.astro';
+import Features from '@/components/home/Features.astro';
+import HowItWorks from '@/components/home/HowItWorks.astro';
+import Pricing from '@/components/home/Pricing.astro';
+import CTA from '@/components/home/CTA.astro';
+---
+
+<BaseLayout
+  title={SITE.title}
+  description={SITE.description}
+  type="website"
+  jsonLd={{
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    name: SITE.name,
+    description: SITE.description,
+    applicationCategory: 'BusinessApplication',
+    operatingSystem: 'Web, iOS, Android, Windows, macOS',
+    offers: {
+      '@type': 'Offer',
+      price: '15.00',
+      priceCurrency: 'USD'
+    }
+  }}
+>
+  <Hero />
+  <Logos />
+  <Features />
+  <HowItWorks />
+  <Pricing />
+  <CTA />
+</BaseLayout>

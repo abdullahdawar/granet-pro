@@ -1,0 +1,109 @@
+---
+import { SITE } from '@/config/site';
+
+const modules = [
+  {
+    title: "COGS Analysis",
+    type: "video",
+    src: "https://cdn.pagesmith.app/d0f3a599/videos/7.1-cogs-analysis.mov",
+  },
+  {
+    title: "Inventory",
+    type: "image",
+    src: "https://cdn.pagesmith.app/d0f3a599/images/6.9-inventory-master-1536.webp",
+    srcset: "https://cdn.pagesmith.app/d0f3a599/images/6.9-inventory-master-1536.webp 800w",
+  },
+  {
+    title: "Performance",
+    type: "video",
+    src: "https://cdn.pagesmith.app/d0f3a599/videos/3.2-product-performance.mov",
+  },
+  {
+    title: "Sales Analysis",
+    type: "video",
+    src: "https://cdn.pagesmith.app/d0f3a599/videos/3.1-sales-analysis.mov",
+  },
+  {
+    title: "Analytics",
+    type: "video",
+    src: "https://cdn.pagesmith.app/d0f3a599/videos/3.0-analytics-overview.mov",
+  }
+];
+---
+
+<section id="hero" class="bg-background pt-10 pb-16 md:pt-12 md:pb-24 overflow-hidden relative" data-ps="src/components/home/Hero.astro:hero-01">
+  <!-- Subtle futuristic background accents -->
+  <div class="absolute top-0 right-0 w-full max-w-[800px] aspect-square bg-primary/5 rounded-full blur-[100px] -z-10 translate-x-1/3 -translate-y-1/3" data-ps="src/components/home/Hero.astro:bg-accent-1"></div>
+  <div class="absolute bottom-0 left-0 w-full max-w-[600px] aspect-square bg-primary/5 rounded-full blur-[80px] -z-10 -translate-x-1/3 translate-y-1/3" data-ps="src/components/home/Hero.astro:bg-accent-2"></div>
+
+  <div class="max-w-[1700px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 xl:gap-16 items-center" data-ps="src/components/home/Hero.astro:hero-02">
+    
+    <!-- Left Column: Messaging & CTAs -->
+    <div class="reveal-left lg:col-span-5 xl:col-span-4 2xl:col-span-3 flex flex-col justify-start z-10" data-ps="src/components/home/Hero.astro:hero-03">
+      <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-bold mb-0 hero-animate border border-primary/20 w-max" data-ps="src/components/home/Hero.astro:hero-04">
+        <span class="relative flex h-2.5 w-2.5" data-ps="src/components/home/Hero.astro:3f6ipl">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75" data-ps="src/components/home/Hero.astro:3f6ipk"></span>
+          <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary" data-ps="src/components/home/Hero.astro:3f6ipj"></span>
+        </span>
+        All-In-One & Offline-First
+      </div>
+      
+      <h1 class="font-extrabold tracking-tight leading-[1.1] mb-6 hero-animate hero-animate-delay-1" data-ps="src/components/home/Hero.astro:hero-05">
+        <span class="text-lg md:text-xl lg:text-2xl text-foreground block font-bold" data-ps="src/components/home/Hero.astro:title-sub">Know Your Profits. Control Your Kitchen. Scale with Confidence.</span>
+      </h1>
+      
+      <p class="text-lg md:text-xl text-muted-foreground mb-10 max-w-lg leading-relaxed hero-animate hero-animate-delay-2" data-ps="src/components/home/Hero.astro:hero-06">Real-time POS, smart inventory, automated COGS, and deep analytics — all in one powerful platform. Always running, even without internet.</p>
+      
+      <div class="flex flex-col sm:flex-row gap-4 hero-animate hero-animate-delay-3" data-ps="src/components/home/Hero.astro:hero-07">
+        <a href="#get-started" class="bg-primary text-primary-foreground px-8 py-4 rounded-lg font-bold text-lg hover:bg-primary-hover transition-all shadow-lg shadow-primary/25 hover:shadow-xl hover:-translate-y-1 text-center" data-ps="src/components/home/Hero.astro:8zc2w">
+          Get Started
+        </a>
+        <a href="#demo" class="border-2 border-primary/20 bg-background text-foreground px-8 py-4 rounded-lg font-bold text-lg hover:border-primary hover:bg-primary/5 transition-all text-center" data-ps="src/components/home/Hero.astro:8zc2x">
+          Book a Demo
+        </a>
+      </div>
+      
+      <!-- Minimal doodle-style accent -->
+      <div class="mt-12 hidden md:flex items-center gap-4 text-sm font-medium text-muted-foreground hero-animate hero-animate-delay-4 relative" data-ps="src/components/home/Hero.astro:doodle-1">
+        <svg class="w-16 h-16 text-primary/40 absolute -top-8 -right-8 -rotate-12" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 50 Q 40 10 90 50" stroke="currentColor" stroke-width="3" stroke-linecap="round" fill="transparent" stroke-dasharray="6 6"/>
+          <path d="M75 35 L 90 50 L 75 65" stroke="currentColor" stroke-width="3" stroke-linecap="round" fill="transparent"/>
+        </svg>
+        <span class="z-10" data-ps="src/components/home/Hero.astro:3f6ipc">Trusted by forward-thinking businesses worldwide</span>
+      </div>
+    </div>
+
+    <!-- Right Column: Structured 16:9 Grid Visual -->
+    <div class="lg:col-span-7 xl:col-span-8 2xl:col-span-9 hero-animate hero-animate-delay-2 relative" data-ps="src/components/home/Hero.astro:hero-09">
+      
+      <div class="grid grid-cols-3 gap-2 sm:gap-3 w-full" data-ps="src/components/home/Hero.astro:grid-structure">
+        <!-- Main Dashboard / POS Video (Spans 2 cols, 2 rows) -->
+        <div class="col-span-2 row-span-2 relative rounded-xl overflow-hidden shadow-xl border border-border/50 bg-background group" data-ps="src/components/home/Hero.astro:media-1">
+          <video src="https://cdn.pagesmith.app/d0f3a599/videos/1-offline-mode.mov" autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-ps="src/components/home/Hero.astro:vid-hero-main"></video>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" data-ps="src/components/home/Hero.astro:grad-main"></div>
+          <div class="absolute bottom-4 right-4 z-20 bg-background/95 backdrop-blur-md text-sm font-bold px-3 py-1.5 rounded-md shadow-md text-foreground flex items-center gap-2" data-ps="src/components/home/Hero.astro:label-1">
+            <span class="w-2.5 h-2.5 rounded-full bg-primary animate-pulse" data-ps="src/components/home/Hero.astro:dot-1"></span>  POS
+          </div>
+        </div>
+
+        <!-- 5 Supporting Modules -->
+        {modules.map((mod, i) => (
+          <div class="relative rounded-xl overflow-hidden shadow-sm border border-border/50 bg-background aspect-video col-span-1 group" data-ps={`src/components/home/Hero.astro:box-${i}`}>
+            {mod.type === 'video' ? (
+              <video src={mod.src} autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-ps={`src/components/home/Hero.astro:vid-${i}`} />
+            ) : (
+              <img src={mod.src} srcset={mod.srcset} sizes="(max-width: 768px) 33vw, 20vw" alt={mod.title} class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" data-ps={`src/components/home/Hero.astro:img-${i}`} />
+            )}
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2.5 sm:p-3" data-ps={`src/components/home/Hero.astro:grad-${i}`}>
+              <span class="text-white text-[10px] sm:text-xs font-semibold translate-y-1 group-hover:translate-y-0 transition-transform duration-300 tracking-wide" data-ps={`src/components/home/Hero.astro:title-${i}`}>{mod.title}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+      
+      <!-- Decorative Elements -->
+      <div class="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-tr from-primary/10 to-transparent blur-3xl rounded-full pointer-events-none" data-ps="src/components/home/Hero.astro:dec-1"></div>
+    </div>
+    
+  </div>
+</section>
